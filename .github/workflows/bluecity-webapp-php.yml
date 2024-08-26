@@ -2,7 +2,7 @@
 # Last Updated: 26.08.2024  |   Created : 26.08.2024
 # 
 
-name: Build and deploy Kabooxa App
+name: Build and deploy BlueCity App
 
 on:
   push:
