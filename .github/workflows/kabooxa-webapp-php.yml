@@ -27,7 +27,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-        script: echo "hello@30"
+        with:
+         script: echo "hello@30"
 
   deploy:
     permissions:
