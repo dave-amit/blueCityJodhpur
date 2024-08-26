@@ -26,7 +26,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: "build steps of blueCityJodhpur"
+        uses: actions/checkout@v4
         with:
          script: echo "hello@30"
 
