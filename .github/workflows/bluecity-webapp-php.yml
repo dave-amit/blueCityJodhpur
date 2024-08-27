@@ -26,11 +26,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: "build steps of blueCityJodhpur"
-        uses: actions/checkout@v4
-        with:
-         script: echo "hello@30"
-
+      - uses: actions/checkout@v4
+        
   deploy:
     permissions:
       contents: none
@@ -46,7 +43,7 @@ jobs:
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
+          key: ${{ secrets.KEY }}
           port: ${{ secrets.PORT }}
           script: 
             whoami
