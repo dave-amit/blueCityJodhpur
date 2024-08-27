@@ -49,4 +49,6 @@ jobs:
             whoami
             cd /home/kabooxa/test.kabooxa.net
             ls
+            git pull origin master
+            ls
           timeout: 120s
