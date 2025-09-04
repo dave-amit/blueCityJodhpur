@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 env:
-  KABOOXA_WEBAPP_NAME: BlueCity    # set this to your application's name
+  KABOOXA_WEBAPP_NAME: kabooxa    # set this to your application's name
   KABOOXA_WEBAPP_PACKAGE_PATH: '/home/kabooxa/test.kabooxa.net'      # set this to the path to your web app project, defaults to the repository root
   KABOOXA_WEBAPP_HOST: '173.231.248.175' # IP address of the server
   KABOOXA_WEBAPP_USERNAME: 'root' #USERNAME 
@@ -47,10 +47,8 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             whoami
-            cd /home/landingpagepit4/testamd
-            pwd
-            git pull origin main
-            cd /home/landingpagepit4
-            sudo chown -R landingpagepit4:landingpagepit4 testamd
-            sudo chown landingpagepit4:nobody testamd
+            cd /home/kabooxa/test.kabooxa.net
+            ls
+            git pull origin master
+            ls
           timeout: 120s
